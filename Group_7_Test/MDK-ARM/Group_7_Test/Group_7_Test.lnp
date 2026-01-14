@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"group_7_test\startup_stm32f411xe.o"
+"group_7_test\main.o"
+"group_7_test\stm32f4xx_it.o"
+"group_7_test\stm32f4xx_hal_msp.o"
+"group_7_test\stm32f4xx_hal_tim.o"
+"group_7_test\stm32f4xx_hal_tim_ex.o"
+"group_7_test\stm32f4xx_hal_rcc.o"
+"group_7_test\stm32f4xx_hal_rcc_ex.o"
+"group_7_test\stm32f4xx_hal_flash.o"
+"group_7_test\stm32f4xx_hal_flash_ex.o"
+"group_7_test\stm32f4xx_hal_flash_ramfunc.o"
+"group_7_test\stm32f4xx_hal_gpio.o"
+"group_7_test\stm32f4xx_hal_dma_ex.o"
+"group_7_test\stm32f4xx_hal_dma.o"
+"group_7_test\stm32f4xx_hal_pwr.o"
+"group_7_test\stm32f4xx_hal_pwr_ex.o"
+"group_7_test\stm32f4xx_hal_cortex.o"
+"group_7_test\stm32f4xx_hal.o"
+"group_7_test\stm32f4xx_hal_exti.o"
+"group_7_test\system_stm32f4xx.o"
+--strict --scatter "Group_7_Test\Group_7_Test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Group_7_Test.map" -o Group_7_Test\Group_7_Test.axf
