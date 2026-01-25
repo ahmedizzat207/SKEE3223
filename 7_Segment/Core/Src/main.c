@@ -193,7 +193,7 @@ void EXTI0_IRQHandler(void)
 
 void EXTI1_IRQHandler(void)
 {
-    // Debounce: Only process if debounce period has elapsed
+  // Debounce: Only process if debounce period has elapsed
   if(exti_debounce_counter == 0 && !exti_debounce_flag) {
     // Button press accepted after debounce
     Update_Number(INCREMENT, &digit_tens, &digit_ones, &digit_tenths);
@@ -271,7 +271,6 @@ int main(void)
 		} else if(exti_debounce_counter == 0 && exti_debounce_flag) {
 			exti_debounce_flag = 0;  // Debounce period complete, ready for next press
 		}
-		
 		DisplayNumber(); // multiplex display
 	}
   /* USER CODE END 3 */
